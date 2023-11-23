@@ -1,0 +1,17 @@
+﻿In this script, there are 4 methods. readFile, writeFile, and multiplyMatrices. 
+1. readFile takes in 2 parameters: a file pointer and a 2d array aka a matrix
+   1. It opens the file in read binary formats
+   2. It checks if the file exists, if it doesn’t, then the program crashes
+   3. If it exists, creates n, which equals the first int in the program, which in turn is equal to the dimension of the matrix
+   4. Then it iterates through every line, reading in each integer and filling out the matrix with it
+   5. Closes the file
+   6. Returns the first element
+2. writeFile, which takes in 3 parameters: a file pointer, the dimension of the matrix, and a matrix.
+   1. This method takes in a matrix and writes it into a binary file, called result.bin, and this method follows the same principle as the first method
+3. multiplyMatrices, which takes in 4 parameters: the dimensions of matrices, and 3 2d arrays aka matrices
+   1. This method calculates the product of the multiplication of 2 matrices that were passed as arguments to the function
+4. main
+   1. Initiates matrices
+   2. It reads in 2 files called matrix1.bin and matrix2.bin
+   3. Validates the dimensions of matrices based on whether their files exist, whether the matrix sizes are the same, and if they are over the MAX_SIZE variable which is 100
+   4. Executes method multiplication and then finally executes the writeFile method

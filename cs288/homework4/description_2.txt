@@ -1,0 +1,3 @@
+This code works similarly to problem1. The main distinction is the flipSign function, which converts negative numbers into their equivalents by inverting their most significant bits. By shifting 1 to the left (sizeof(int) * 8 - 1) times, it computes the bit mask for the sign bit, which is then XORed with each array element. Because of this inversion, signed integers can be sorted using the radix sort method, which is originally meant for unsigned integers. This ensures that negative values are sorted correctly when the sign bit is flipped back after sorting.
+
+
